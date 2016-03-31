@@ -1,13 +1,13 @@
-//Ò»Çò´Ó100Ã×¸ß¶È×ÔÓÉÂäÏÂ£¬Ã¿´ÎÂäµØºó·´Ìø»ØÔ­¸ß¶ÈµÄÒ»°ë;
-//ÔÙÂäÏÂ£¬ÇóËüÔÚ µÚ10´ÎÂäµØÊ±£¬¹²¾­¹ı¶àÉÙÃ×£¿µÚ10´Î·´µ¯¶à¸ß£¿
+//ä¸€çƒä»100ç±³é«˜åº¦è‡ªç”±è½ä¸‹ï¼Œæ¯æ¬¡è½åœ°ååè·³å›åŸé«˜åº¦çš„ä¸€åŠ;
+//å†è½ä¸‹ï¼Œæ±‚å®ƒåœ¨ ç¬¬10æ¬¡è½åœ°æ—¶ï¼Œå…±ç»è¿‡å¤šå°‘ç±³ï¼Ÿç¬¬10æ¬¡åå¼¹å¤šé«˜ï¼Ÿ
 package com.test;
 
 public class GetHeight {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		double H[] = new double[10];//ÓÃÀ´´æ´¢Ã¿´ÎÂäµØÖ®Ç°µÄ¸ß¶È
-		double R[] = new double[10];//ÓÃÀ´´æ´¢Ã¿´ÎÂäµØÖ®ºó·µ»ØµÄ¸ß¶È
+		double H[] = new double[10];//ç”¨æ¥å­˜å‚¨æ¯æ¬¡è½åœ°ä¹‹å‰çš„é«˜åº¦
+		double R[] = new double[10];//ç”¨æ¥å­˜å‚¨æ¯æ¬¡è½åœ°ä¹‹åè¿”å›çš„é«˜åº¦
 		H[0] = 100;
 		R[0] = 50;
 		double sum = 0;
@@ -18,15 +18,26 @@ public class GetHeight {
 				sum = sum + H[i-1] +R[i-1];
 			}else{
 				sum = sum + H[i-1];
-				System.out.println("µÚ10´ÎÂäµØÊ±¹²¾­¹ıµÄ¾àÀë£º" + sum);
-				System.out.println("µÚ10´Î·´µ¯µÄ¸ß¶ÈÎª£º" + R[i]);
+				System.out.println("ç¬¬10æ¬¡è½åœ°æ—¶å…±ç»è¿‡çš„è·ç¦»ï¼š" + sum);
+				System.out.println("ç¬¬10æ¬¡åå¼¹çš„é«˜åº¦ä¸ºï¼š" + R[i]);
 			}
 		}
 		/*
-		 * Êä³öÃ¿´ÎµÄÂäµØ¸ß¶ÈºÍ·´µ¯¸ß¶È
+		 * è¾“å‡ºæ¯æ¬¡çš„è½åœ°é«˜åº¦å’Œåå¼¹é«˜åº¦
 		for(int j=0;j<10;j++){
 			System.out.println(H[j] + "  " + R[j]);
 		}
+		*/
+		
+		/*
+		* method2:
+		double h = 100,s = 100;
+		for(int i=1; i<10; i++) {
+		   s = s + h;
+		   h = h / 2;
+		}
+		System.out.println("ç»è¿‡è·¯ç¨‹ï¼š" + s);
+		System.out.println("åå¼¹é«˜åº¦ï¼š" + h / 2);
 		*/
 	}
 
