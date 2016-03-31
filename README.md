@@ -6,3 +6,4 @@ forth:Grade<br>
 fifth:GcdAndLcm<br>
 sixth:DecomposePrimeFactors<br>
 seventh:StatisticCount<br>
+eighth:NumAdd<br>
