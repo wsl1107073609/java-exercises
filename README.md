@@ -1,5 +1,4 @@
 # java-exercises
-<hr>
 First:Fibonacci<br>
 second:PrimeNumber<br>
 third:Flowers<br>
